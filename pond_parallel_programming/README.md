@@ -5,6 +5,7 @@ Giovana Lisbôa Thomé
 Ciências da Computação 2022.1
 
 ## Atividades em código
+
 Os exemplos do vídeo foram implementados em [threads_with_classes](./threads_with_classes.py) e [threads_with_functions](./threads_with_functions.py). A atividade principal foi implementada no arquivo [main](./main.py).
 
 ## Respostas dissertativas
@@ -23,4 +24,8 @@ Para execução de três ou mais threads, o código em [main.py](./main.py) deve
 
 ### Por que a abordagem com threads possui maior escalabilidade?
 
-A abordagem de utilização de threads possui maior escalabilidade pois consegue executar diferentes partes de um mesmo programa ou processo ao mesmo tempo. Isso faz com que a capacidade computacional seja mais utilizada e diminui o tmepo de execução. Porém, no caso específico da atividade de somar números em uma lista,
+A abordagem de utilização de threads possui maior escalabilidade pois consegue executar diferentes partes de um mesmo programa ou processo ao mesmo tempo. Isso faz com que a capacidade computacional seja mais utilizada e diminui o tempo de execução (execução simultânea e compartilhamento de recursos). Porém, no caso específico da atividade de somar números em uma lista, não necessariamente teremos um resultados de tempo de execução melhor se tivermos um número maior de threads:
+
+- O tempo de criação de threads pode ser custoso e;
+- Dependendo do número de threads criadas, o número de somas realizadas dentro de cada uma será menor.
+  Portanto, trabalhar com threads pode ser agregar muito valor, porém, se feito sem prestar atenção, pode trazer mais prejuízos do que lucros.
